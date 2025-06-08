@@ -1,0 +1,84 @@
+﻿Metadata for Montero et al. ,
+,
+CSV files: aff_NoSurvNAs and agr_NoSurvNAs,
+,
+Column name,Description
+colony_year,Colony and year of data collection
+pup_sex,Sex of offspring
+pup_yrborn,Year pup was offspring
+pup_col_area,Colony where pup data collection occurred
+pup_emerjdate,Julian date of pup emergence 
+aug15_emergence,Number of days between emergence date of current year and aug 15 of the year prior
+pup_littersizeborn,Litter size pup was born in
+indegree,Number of individuals from whom a focal individual receives interactions (Wasserman and Faust 1994)
+outdegree,Number of individuals with whom a focal individual initiates interactions (Wasserman and Faust 1994)
+betweenness,The proportion of shortest path lengths between all pairs of individuals within the network that include the focal individual (Wey et al. 2008)
+outcloseness,Describes how influential a focal individual is within the network. Calculated as the sum of the reciprocal of the shortest path length for initiated interactions between the focal individual and all other individuals (Wasserman and Faust 1994)
+incloseness,Describes how influential a focal individual is within the network. Calculated as the sum of the reciprocal of the shortest path length for received interactions between the focal individual and all other individuals (Wasserman and Faust 1994)
+local_clustering,"Describes an individual’s embeddedness within their network, divide the number of actual relationships formed by a focal individual by the total number of possible relationships (Wey et al. 2008, Wasserman and Faust 1994). "
+neg_ave_shortest_path,"Negative of the average shortest path value for better interpretation, allows a positive relationship between social integration and pup survival to result in a positive estimate"
+ave_shortest_path,"Describes how  efficiently a member of a network can connect with others, the average number of individuals in a path between the focal individual and another individual (Newman 2018)"
+eigenv,"A measure of connectedness, takes into account the indirect effects of relationships that occur between a focal individual’s neighbors in addition to the focal individual’s own position (Newman 2018)"
+outstrength,Describes how frequently a focal individual initiates interaction with their neighbors (Wasserman and Faust 1994). 
+instrength,Describes how frequently a focal individual receives interaction from their neighbors (Wasserman and Faust 1994). 
+valley,Valley position (up valley or down valley)
+pup_summer_surv,"Survival of pups over their first summer defined as seen past August 10th or during the next year (1=survived, 0=did not survive)"
+pup_year_surv,"Survival of pups over their first year defined as seen during the next year (1=survived, 0=did not survive)"
+yearly.pred.index,Predation index of colony relative to all other colonies during that year (low or high) 
+overall.index,Predation index of colony relative to all other colonies in all other years (low or high)
+pup_massjun,Averaged individual pup mass in June
+pup_massaug,Averaged individual pup mass in August
+mass_gain,Mass gained by individual over active season
+mass_gain.day,Mass gain rate per day for individual over active season
+mother_age,Age of mother (dam)
+cluster,"Social group cluster, for identification of social network"
+groupID,"Social group ID, for indentification of social network"
+year,Year data was collected
+group_size,Number of individuals in colony 
+network_size,Number of individuals included in social network of individual 
+pup_uid,Unique identification number of offspring
+mother_uid,Unique identification number of mother 
+mother_year,Unique identification number of mother and year of data collction
+,
+,
+References,
+Newman M. 2018. Networks. England: Oxford University Press,
+"Wasserman S, Faust K. 1994. Social Network Analysis: Methods and Applications. England: Cambridge University Press",
+"Wey TW, Blumstein DT, Shen W, Jordan F. 2008. Social network analysis of animal behaviour: a promising tool for the study of sociality. Animal Behaviour. 75:333–344.",
+,
+,
+csv: tb_annualid,
+,
+year,Year of data collection
+yr_surv,"Yearly survival (1 = survived the year, 0 = did not survive the year)"
+col_area,Colony area; geographic area where individual lives
+rs,Reproductive status 
+nboffspring,Number of offspring produced that year
+sum_surv,"Summer survival (1= survived the summer, 0 = did not survive the summer)"
+yrlg_disp,"Yearling dispersal; estimated based on behavioral observations (1=dispersed, 0 = did not disperse)"
+death_type,"Cause of death, if known"
+massjun,Mass estimated on 01 June
+massaug,Mass estimated on August 15
+nb_mass,Number of mass observations used for estimation
+uid,Unique identification number of indvidual marmot
+uid.year,Unique identification number of indvidual marmot and year of data collection
+,
+,
+,
+csv: tb_socint,
+year,Year of data collection
+col_area,Colony area; geographic area where individual lives 
+uid_ini,Unique identification number of initiator of interaction
+uid_rec,Unique identification number of recipient of interaction
+uid_win,Unique identification number of winnter of interactions
+interac_type,Interaction type; defined in ethogram Blumstein et al. 2009
+,
+References ,
+"Blumstein DT, Wey TW, Tang K. 2009. A test of the social cohesion hypothesis: interactive female marmots remain at home. Proceedings of the Royal Society B: Biological Sciences. 276(1669): 3007-3012",
+,
+,
+csv: tb_predobs,
+colony_year,Colony and year of data collection
+pred_obs,number of predators observed at colony during year of data collection
+obs_sesh,number of observation sessions at colony during year of data collection
+pred_obs/obs_sesh,number of predator observations divided by number of observation sessions at a colony during year of data collection
